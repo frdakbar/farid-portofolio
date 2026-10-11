@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farid — Personal Portfolio</title>
+  <meta name="description" content="Personal Portfolio of Muhamad Farid Akbar Maulana — Information Systems Student, Data Analyst Aspirant, Tech & Visual Enthusiast.">
+  
+  <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Global Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#home" class="navbar-brand" aria-label="Farid Portfolio Home">farid<span class="brand-dot">.</span></a>
+      
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#interests" class="nav-link">Interests</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar-actions">
+        <!-- Download CV CTA (Disabled / Placeholder state until CV file is provided) -->
+        <a href="#contact" class="btn btn-cv" id="cv-btn" title="CV file not attached yet - Contact Farid">
+          Download CV
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout Shell -->
+  <main id="main-content">
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="section section-hero">
+      <div class="container hero-container">
+        
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-badge">Information Systems Student</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Muhamad Farid<br>
+            <span class="text-gradient">Akbar Maulana</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            I Build, Analyze, and Create.
+          </p>
+
+          <p class="hero-description">
+            Halo, saya Farid — mahasiswa Sistem Informasi di STMIK IKMI Cirebon yang berfokus pada pengembangan aplikasi web, analisis data, serta eksplorasi karya visual seperti fotografi &amp; videografi.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Lihat Proyek</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              <span>Tentang Saya</span>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <span class="meta-dot"></span>
+              <span>STMIK IKMI Cirebon</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-dot"></span>
+              <span>Web Dev &amp; Data Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Column -->
+        <div class="hero-visual">
+          <div class="visual-card">
+            <div class="visual-card-header">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="window-title">farid_profile.config</span>
+            </div>
+            <div class="visual-card-body">
+              <div class="avatar-placeholder">
+                <div class="avatar-glow"></div>
+                <div class="avatar-frame">
+                  <span class="avatar-initials">FA</span>
+                </div>
+                <div class="placeholder-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                  <span>Frame Foto Portrait Farid</span>
+                </div>
+              </div>
+              
+              <div class="visual-code-snippet">
+                <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</div>
+                <div class="code-line indent"><span class="code-prop">name</span>: <span class="code-str">'Farid'</span>,</div>
+                <div class="code-line indent"><span class="code-prop">role</span>: <span class="code-str">'Information Systems Student'</span>,</div>
+                <div class="code-line indent"><span class="code-prop">focus</span>: [<span class="code-str">'Web Dev'</span>, <span class="code-str">'Data Analysis'</span>],</div>
+                <div class="code-line indent"><span class="code-prop">status</span>: <span class="code-str">'Open for Internships'</span></div>
+                <div class="code-line">};</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section id="about" class="section section-surface section-about">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="eyebrow-badge">Get To Know Me</span>
+          <h2 class="section-title">Mengenal Saya Lebih Dekat</h2>
+          <p class="section-subtitle">
+            Kombinasi antara logika sistem informasi, pemikiran analitis, dan perspektif visual.
+          </p>
+        </div>
+
+        <!-- About Layout Grid -->
+        <div class="about-grid">
+          
+          <!-- Column 1: Personal & Professional Story -->
+          <div class="about-story">
+            <div class="story-card">
+              <h3 class="story-title">
+                <span class="story-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </span>
+                Latar Belakang &amp; Pendekatan
+              </h3>
+              
+              <div class="story-text">
+                <p>
+                  Saya adalah mahasiswa <strong>Sistem Informasi di STMIK IKMI Cirebon</strong> yang memiliki ketertarikan mendalam pada pengembangan aplikasi web, analisis data, dan teknologi digital. Bagi saya, teknologi bukan hanya sekadar alat, melainkan media untuk menyelesaikan masalah secara terstruktur dan efisien.
+                </p>
+                <p>
+                  Selain berfokus pada logika teknis dan data, saya menyeimbangkannya dengan sisi kreatif melalui <strong>UI/UX design, fotografi dan videografi</strong>. Kepekaan visual ini membantu saya memperhatikan detail estetika dan pengalaman pengguna saat membangun antarmuka web.
+                </p>
+                <p>
+                  Pendekatan belajar saya didasari oleh rasa ingin tahu yang tinggi dan eksperimen langsung—baik dalam membedah data, merancang alur sistem, maupun mengabadikan visual. Saya terus mengasah keahlian teknis untuk siap berkontribusi secara profesional.
+                </p>
+              </div>
+
+              <!-- Quick Focus Highlight Chips -->
+              <div class="about-tags">
+                <span class="about-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  Sistem Informasi
+                </span>
+                <span class="about-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                  Web Development
+                </span>
+                <span class="about-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                  Data Analysis
+                </span>
+                <span class="about-tag">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                  Visual &amp; Photography
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Structured Supporting Cards -->
+          <div class="about-highlights">
+            
+            <!-- Highlight Item 1: Pendidikan -->
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="info-content">
+                <span class="info-label">Pendidikan</span>
+                <h3 class="info-title">STMIK IKMI Cirebon</h3>
+                <p class="info-desc">Program Studi Sistem Informasi — Mempelajari pengembangan web, pengelolaan basis data, dan analisis sistem.</p>
+              </div>
+            </div>
+
+            <!-- Highlight Item 2: Pengalaman Praktis -->
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <div class="info-content">
+                <span class="info-label">Pengalaman Praktis</span>
+                <h3 class="info-title">Admin Online Shop <span class="info-year">(2023 – 2024)</span></h3>
+                <p class="info-desc">Pengelolaan operasional harian, komunikasi pelanggan, serta pemrosesan pesanan dan stok barang.</p>
+              </div>
+            </div>
+
+            <!-- Highlight Item 3: Minat & Eksplorasi -->
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                  <path d="M2 12h20"></path>
+                </svg>
+              </div>
+              <div class="info-content">
+                <span class="info-label">Minat &amp; Eksplorasi</span>
+                <h3 class="info-title">Kreativitas &amp; Media Digital</h3>
+                <p class="info-desc">Eksplorasi UI/UX design, fotografi, videografi, serta pengembangan web untuk antarmuka yang estetis dan fungsional.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Skills & Tools Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="eyebrow-badge">What I Work With</span>
+          <h2 class="section-title">Skills &amp; Tools</h2>
+          <p class="section-subtitle">
+            Bidang keahlian, teknologi, dan peralatan yang dipelajari serta digunakan dalam pengembangan web, analisis data, dan media kreatif.
+          </p>
+        </div>
+
+        <!-- Skills Category Grid -->
+        <div class="skills-grid">
+          
+          <!-- Category 1: Web Development -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="skill-card-title-group">
+                <h3 class="skill-card-title">Web Development</h3>
+                <span class="skill-card-subtitle">Frontend &amp; Backend Foundations</span>
+              </div>
+            </div>
+            <div class="skill-card-body">
+              <ul class="skill-list">
+                <li class="skill-item">
+                  <span class="skill-name">HTML5 &amp; CSS3</span>
+                  <span class="skill-badge">Frontend</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">PHP</span>
+                  <span class="skill-badge">Backend</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Laravel</span>
+                  <span class="skill-badge">Framework</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-badge">Database</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Category 2: Data Analysis -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <div class="skill-card-title-group">
+                <h3 class="skill-card-title">Data Analysis</h3>
+                <span class="skill-card-subtitle">Processing &amp; Insights</span>
+              </div>
+            </div>
+            <div class="skill-card-body">
+              <ul class="skill-list">
+                <li class="skill-item">
+                  <span class="skill-name">Microsoft Excel</span>
+                  <span class="skill-badge">Spreadsheet</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-badge">Querying</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Data Visualization</span>
+                  <span class="skill-badge">Reporting</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">K-Means Clustering</span>
+                  <span class="skill-badge">Data Mining</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Category 3: UI/UX & Design -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div class="skill-card-title-group">
+                <h3 class="skill-card-title">UI/UX Design</h3>
+                <span class="skill-card-subtitle">Interface &amp; Experience</span>
+              </div>
+            </div>
+            <div class="skill-card-body">
+              <ul class="skill-list">
+                <li class="skill-item">
+                  <span class="skill-name">Figma</span>
+                  <span class="skill-badge">Design Tool</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Wireframing</span>
+                  <span class="skill-badge">Layouting</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Prototyping</span>
+                  <span class="skill-badge">User Flow</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Design System Basics</span>
+                  <span class="skill-badge">UI Specs</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Category 4: Creative Tools -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                  <circle cx="12" cy="13" r="4"></circle>
+                </svg>
+              </div>
+              <div class="skill-card-title-group">
+                <h3 class="skill-card-title">Creative Skills</h3>
+                <span class="skill-card-subtitle">Visual &amp; Multimedia</span>
+              </div>
+            </div>
+            <div class="skill-card-body">
+              <ul class="skill-list">
+                <li class="skill-item">
+                  <span class="skill-name">Fotografi</span>
+                  <span class="skill-badge">Visual Story</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Videografi</span>
+                  <span class="skill-badge">Cinematic</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Content Creation</span>
+                  <span class="skill-badge">Media</span>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-name">Editing Visual</span>
+                  <span class="skill-badge">Post-Prod</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Featured Projects Section -->
+    <section id="projects" class="section section-surface">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="eyebrow-badge">Selected Work</span>
+          <h2 class="section-title">Projects I've Worked On</h2>
+          <p class="section-subtitle">
+            Kumpulan konsep aplikasi web, eksplorasi antarmuka UI/UX, dan studi analisis data yang dikembangkan selama masa perkuliahan dan pembelajaran mandiri.
+          </p>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project Card 1: Pedasin -->
+          <article class="project-card">
+            <div class="project-preview" aria-label="Preview visual konsep Pedasin UI/UX Design">
+              <div class="preview-browser-bar">
+                <div class="preview-window-dots">
+                  <span class="preview-dot dot-red"></span>
+                  <span class="preview-dot dot-yellow"></span>
+                  <span class="preview-dot dot-green"></span>
+                </div>
+                <span class="preview-url-text">pedasin.uiux</span>
+                <span class="preview-type-badge">UI/UX Design</span>
+              </div>
+              <div class="preview-canvas">
+                <img src="assets/images/pedasin-uiux.png" alt="Screenshot Pedasin UI/UX Design" class="project-img" onerror="if (this.src.indexOf('pedasin-uiux.png') !== -1) { this.src='assets/images/pedasin.jpeg'; } else { this.style.display='none'; this.nextElementSibling.style.display='flex'; }" />
+                <div class="preview-content">
+                  <div class="preview-icon-wrapper">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                      <path d="M2 17l10 5 10-5"></path>
+                      <path d="M2 12l10 5 10-5"></path>
+                    </svg>
+                  </div>
+                  <span class="preview-label">Pedasin UI/UX Design</span>
+                  <span class="preview-hint">assets/images/pedasin-uiux.png</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">UI/UX Design</span>
+              <h3 class="project-title">Pedasin</h3>
+              <p class="project-desc">
+                Perancangan UI/UX untuk platform pemesanan makanan pedas Pedasin, dengan fokus pada navigasi menu, kategori makanan, dan pengalaman pengguna.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Figma</span>
+                <span class="project-tag">UI/UX Design</span>
+                <span class="project-tag">Wireframing</span>
+                <span class="project-tag">Prototyping</span>
+              </div>
+              <div class="project-footer">
+                <div class="project-status">
+                  <span class="status-dot"></span>
+                  <span>Desain UI/UX &amp; Navigasi</span>
+                </div>
+                <span class="project-badge-pill">Design Concept</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2: Sistem Laundry Online -->
+          <article class="project-card">
+            <div class="project-preview" aria-label="Preview visual Sistem Laundry Online">
+              <div class="preview-browser-bar">
+                <div class="preview-window-dots">
+                  <span class="preview-dot dot-red"></span>
+                  <span class="preview-dot dot-yellow"></span>
+                  <span class="preview-dot dot-green"></span>
+                </div>
+                <span class="preview-url-text">laundry-online.app</span>
+                <span class="preview-type-badge">Web Development</span>
+              </div>
+              <div class="preview-canvas">
+                <img src="assets/images/laundry.jpeg" alt="Screenshot Sistem Laundry Online" class="project-img" onerror="if (this.src.indexOf('laundry.jpeg') !== -1) { this.src='assets/images/laundri.jpeg'; } else { this.style.display='none'; this.nextElementSibling.style.display='flex'; }" />
+                <div class="preview-content">
+                  <div class="preview-icon-wrapper">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    </svg>
+                  </div>
+                  <span class="preview-label">Laundry Online System</span>
+                  <span class="preview-hint">assets/images/laundry.jpeg</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Web Development</span>
+              <h3 class="project-title">Sistem Laundry Online</h3>
+              <p class="project-desc">
+                Pengembangan sistem informasi laundry online untuk mengelola pemesanan layanan, pencatatan status cucian, dan manajemen data pelanggan secara terstruktur.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">HTML &amp; CSS</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="project-footer">
+                <div class="project-status">
+                  <span class="status-dot"></span>
+                  <span>Pengembangan Sistem Web</span>
+                </div>
+                <span class="project-badge-pill">Web Application</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3: Analisis Data Penjualan -->
+          <article class="project-card">
+            <div class="project-preview" aria-label="Preview visual riset Analisis Data Penjualan">
+              <div class="preview-browser-bar">
+                <div class="preview-window-dots">
+                  <span class="preview-dot dot-red"></span>
+                  <span class="preview-dot dot-yellow"></span>
+                  <span class="preview-dot dot-green"></span>
+                </div>
+                <span class="preview-url-text">sales-data.analysis</span>
+                <span class="preview-type-badge">Data Analysis</span>
+              </div>
+              <div class="preview-canvas">
+                <img src="assets/images/analysis.jpeg" alt="Screenshot Analisis Data Penjualan" class="project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="preview-content">
+                  <div class="preview-icon-wrapper">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="18" y1="20" x2="18" y2="10"></line>
+                      <line x1="12" y1="20" x2="12" y2="4"></line>
+                      <line x1="6" y1="20" x2="6" y2="14"></line>
+                      <line x1="2" y1="20" x2="22" y2="20"></line>
+                    </svg>
+                  </div>
+                  <span class="preview-label">Sales Data Analysis</span>
+                  <span class="preview-hint">assets/images/analysis.jpeg</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Data Analysis</span>
+              <h3 class="project-title">Analisis Data Penjualan</h3>
+              <p class="project-desc">
+                Proyek pengolahan dan analisis data penjualan untuk mengidentifikasi tren transaksi, menganalisis pola pembelian, serta menyajikan visualisasi data guna mendukung pengambilan keputusan bisnis.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Data Analysis</span>
+                <span class="project-tag">Data Visualization</span>
+                <span class="project-tag">Microsoft Excel</span>
+                <span class="project-tag">SQL</span>
+              </div>
+              <div class="project-footer">
+                <div class="project-status">
+                  <span class="status-dot"></span>
+                  <span>Analisis Tren Penjualan</span>
+                </div>
+                <span class="project-badge-pill">Data Project</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 4: Sistem Pengaduan Masyarakat -->
+          <article class="project-card">
+            <div class="project-preview" aria-label="Preview visual konsep Sistem Pengaduan Masyarakat">
+              <div class="preview-browser-bar">
+                <div class="preview-window-dots">
+                  <span class="preview-dot dot-red"></span>
+                  <span class="preview-dot dot-yellow"></span>
+                  <span class="preview-dot dot-green"></span>
+                </div>
+                <span class="preview-url-text">public-complaint.service</span>
+                <span class="preview-type-badge">Web Development</span>
+              </div>
+              <div class="preview-canvas">
+                <img src="assets/images/pengaduan.jpeg" alt="Screenshot Sistem Pengaduan Masyarakat" class="project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="preview-content">
+                  <div class="preview-icon-wrapper">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                      <line x1="9" y1="10" x2="15" y2="10"></line>
+                      <line x1="12" y1="7" x2="12" y2="13"></line>
+                    </svg>
+                  </div>
+                  <span class="preview-label">Public Service Workflow</span>
+                  <span class="preview-hint">assets/images/pengaduan.jpeg</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-category">Web Development</span>
+              <h3 class="project-title">Sistem Pengaduan Masyarakat</h3>
+              <p class="project-desc">
+                Konsep portal layanan publik untuk penyampaian laporan masyarakat secara terstruktur, dilengkapi alur penanganan dan monitoring status laporan bagi admin.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Sistem Informasi</span>
+                <span class="project-tag">UI/UX Design</span>
+                <span class="project-tag">Workflow Laporan</span>
+                <span class="project-tag">Admin Panel</span>
+              </div>
+              <div class="project-footer">
+                <div class="project-status">
+                  <span class="status-dot"></span>
+                  <span>Alur Pelaporan &amp; Admin</span>
+                </div>
+                <span class="project-badge-pill">Studi Sistem</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. Experience & Journey Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="eyebrow-badge">My Journey</span>
+          <h2 class="section-title">Experience &amp; Learning</h2>
+          <p class="section-subtitle">
+            Rekam jejak pendidikan akademik, pengalaman kerja praktis, dan proses pembelajaran teknologi secara terstruktur.
+          </p>
+        </div>
+
+        <!-- Timeline Container -->
+        <div class="timeline">
+          
+          <!-- Timeline Item 1: Admin Online Shop -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <article class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-badge-group">
+                  <span class="timeline-category category-work">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    Pengalaman Praktis
+                  </span>
+                  <span class="timeline-period">2023 — 2024</span>
+                </div>
+                <h3 class="timeline-title">Admin Online Shop</h3>
+                <span class="timeline-subtitle">Operasional Harian &amp; Layanan Pelanggan</span>
+              </div>
+              <p class="timeline-desc">
+                Bertanggung jawab dalam pengelolaan operasional harian toko online, memproses pesanan masuk, melayani komunikasi dengan pelanggan secara responsif, serta memastikan pencatatan stok barang tetap akurat dan teratur.
+              </p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Operasional Toko</span>
+                <span class="timeline-tag">Komunikasi Pelanggan</span>
+                <span class="timeline-tag">Pemrosesan Pesanan</span>
+                <span class="timeline-tag">Manajemen Stok</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Timeline Item 2: Pendidikan Sistem Informasi -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <article class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-badge-group">
+                  <span class="timeline-category category-edu">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                      <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    Pendidikan Formal
+                  </span>
+                  <span class="timeline-period">Mahasiswa Aktif</span>
+                </div>
+                <h3 class="timeline-title">STMIK IKMI Cirebon</h3>
+                <span class="timeline-subtitle">Program Studi Sistem Informasi</span>
+              </div>
+              <p class="timeline-desc">
+                Menempuh pendidikan tinggi dengan fokus pada integrasi teknologi dan proses bisnis. Mempelajari dasar dan penerapan pengembangan aplikasi web, perancangan basis data relasional, metode analisis data, serta pemodelan sistem informasi.
+              </p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Sistem Informasi</span>
+                <span class="timeline-tag">Pengembangan Web</span>
+                <span class="timeline-tag">Basis Data Relasional</span>
+                <span class="timeline-tag">Analisis Sistem</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Timeline Item 3: Personal Projects & Coursework -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <article class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-badge-group">
+                  <span class="timeline-category category-project">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="16 18 22 12 16 6"></polyline>
+                      <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    Eksplorasi &amp; Praktikum
+                  </span>
+                  <span class="timeline-period">Berkelanjutan</span>
+                </div>
+                <h3 class="timeline-title">Proyek Praktikum &amp; Studi Mandiri</h3>
+                <span class="timeline-subtitle">Implementasi Teori ke Pengembangan Praktis</span>
+              </div>
+              <p class="timeline-desc">
+                Mengeksplorasi pembuatan antarmuka web interaktif di Figma, membangun prototipe aplikasi dengan PHP dan Laravel, serta mempraktikkan studi analisis data melalui metode CRISP-DM dan algoritma K-Means.
+              </p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">UI/UX Prototyping</span>
+                <span class="timeline-tag">Web Development</span>
+                <span class="timeline-tag">Data Mining</span>
+                <span class="timeline-tag">Hands-on Practice</span>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. Interests & Beyond the Screen Section -->
+    <section id="interests" class="section section-surface">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="eyebrow-badge">Life Outside Code</span>
+          <h2 class="section-title">Beyond the Screen</h2>
+          <p class="section-subtitle">
+            Eksplorasi estetika dan perspektif visual melalui fotografi, videografi, serta cara merangkai narasi cerita di luar aktivitas perkuliahan dan pengembangan teknologi.
+          </p>
+        </div>
+
+        <!-- Interests Editorial Grid -->
+        <div class="interests-grid">
+          
+          <!-- Interest Card 1: Photography -->
+          <article class="interest-card">
+            <div class="interest-media" aria-label="Visual placeholder karya fotografi">
+              <div class="media-viewfinder">
+                <div class="viewfinder-header">
+                  <span class="viewfinder-tag">RAW • 16:10</span>
+                  <span class="viewfinder-indicator">
+                    <span class="indicator-dot"></span> FOCUS
+                  </span>
+                </div>
+                <div class="viewfinder-center">
+                  <div class="media-icon-box">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                      <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+                  </div>
+                  <span class="media-placeholder-title">Karya Fotografi</span>
+                  <span class="media-placeholder-hint">Siap diisi dengan foto hasil bidikan Farid</span>
+                </div>
+                <div class="viewfinder-crosshairs" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="interest-body">
+              <span class="interest-category">Visual Stillness</span>
+              <h3 class="interest-title">Photography</h3>
+              <p class="interest-quote">"Finding stories in everyday moments."</p>
+              <p class="interest-desc">
+                Mengabadikan momen dan interaksi sekitar dengan memperhatikan sudut pandang, pencahayaan alami, dan komposisi frame untuk menangkap cerita di balik situasi sehari-hari.
+              </p>
+              <div class="interest-tags">
+                <span class="interest-tag">Komposisi Cahaya</span>
+                <span class="interest-tag">Sudut Pandang</span>
+                <span class="interest-tag">Detail Visual</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Interest Card 2: Videography -->
+          <article class="interest-card">
+            <div class="interest-media" aria-label="Visual placeholder karya videografi">
+              <div class="media-viewfinder">
+                <div class="viewfinder-header">
+                  <span class="viewfinder-tag">4K • 24FPS</span>
+                  <span class="viewfinder-indicator recording">
+                    <span class="indicator-dot rec-dot"></span> REC
+                  </span>
+                </div>
+                <div class="viewfinder-center">
+                  <div class="media-icon-box">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                      <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                    </svg>
+                  </div>
+                  <span class="media-placeholder-title">Visual Bergerak</span>
+                  <span class="media-placeholder-hint">Siap diisi dengan karya video / cuplikan sinematik Farid</span>
+                </div>
+                <div class="viewfinder-crosshairs" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="interest-body">
+              <span class="interest-category">Cinematic Motion</span>
+              <h3 class="interest-title">Videography</h3>
+              <p class="interest-quote">"Capturing moments through moving visuals."</p>
+              <p class="interest-desc">
+                Mengeksplorasi gambar bergerak, dinamika pergerakan kamera, dan ritme pemotongan adegan untuk menghidupkan suasana dan menyampaikan emosi secara mendalam.
+              </p>
+              <div class="interest-tags">
+                <span class="interest-tag">Pergerakan Kamera</span>
+                <span class="interest-tag">Ritme Sinematik</span>
+                <span class="interest-tag">Penyusunan Adegan</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Interest Card 3: Visual Storytelling -->
+          <article class="interest-card">
+            <div class="interest-media" aria-label="Visual placeholder narasi visual">
+              <div class="media-viewfinder">
+                <div class="viewfinder-header">
+                  <span class="viewfinder-tag">NARRATIVE • TONE</span>
+                  <span class="viewfinder-indicator">
+                    <span class="indicator-dot"></span> STORY
+                  </span>
+                </div>
+                <div class="viewfinder-center">
+                  <div class="media-icon-box">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                  </div>
+                  <span class="media-placeholder-title">Visual Storytelling</span>
+                  <span class="media-placeholder-hint">Siap diisi dengan narasi visual / seri cerita karya Farid</span>
+                </div>
+                <div class="viewfinder-crosshairs" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="interest-body">
+              <span class="interest-category">Digital Narratives</span>
+              <h3 class="interest-title">Visual Storytelling</h3>
+              <p class="interest-quote">"Translating emotions into digital narratives."</p>
+              <p class="interest-desc">
+                Mengintegrasikan warna, ritme gambar, dan konteks cerita menjadi narasi visual yang berkesan—kepekaan yang turut memperkuat intuisi dalam perancangan antarmuka web.
+              </p>
+              <div class="interest-tags">
+                <span class="interest-tag">Mood &amp; Warna</span>
+                <span class="interest-tag">Alur Narasi</span>
+                <span class="interest-tag">Korelasi UI/UX</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="eyebrow-badge">Let's Connect</span>
+          <h2 class="section-title">Have a Project or Opportunity? Let's Connect.</h2>
+          <p class="section-subtitle">
+            Terbuka untuk peluang magang (<em>internship</em>), kolaborasi proyek web development, analisis data, maupun sekadar berdiskusi seputar teknologi dan eksplorasi visual.
+          </p>
+        </div>
+
+        <!-- Contact Layout Grid -->
+        <div class="contact-grid">
+          
+          <!-- Column 1: Direct Communication Channels & Status -->
+          <div class="contact-info-panel">
+            <article class="contact-card info-card-elevated">
+              <div class="contact-card-header">
+                <span class="availability-badge">
+                  <span class="availability-dot"></span>
+                  Terbuka untuk Peluang Magang &amp; Kolaborasi
+                </span>
+                <h3 class="contact-card-title">Kanal Komunikasi Langsung</h3>
+                <p class="contact-card-intro">
+                  Anda dapat menghubungi saya untuk keperluan profesional atau diskusi proyek. Saat ini kanal kontak sedang disiapkan untuk integrasi resmi:
+                </p>
+              </div>
+
+              <!-- Channel List -->
+              <div class="contact-channels">
+                
+                <!-- Channel 1: Email -->
+                <div class="channel-item">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="channel-content">
+                    <span class="channel-label">Email Korespondensi</span>
+                    <a href="mailto:farid1230akbar@gmail.com" class="channel-value channel-link">farid1230akbar@gmail.com</a>
+                    <span class="channel-desc">Tersedia untuk korespondensi resmi, tawaran magang, dan diskusi proyek.</span>
+                  </div>
+                </div>
+
+                <!-- Channel 2: LinkedIn -->
+                <div class="channel-item">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </div>
+                  <div class="channel-content">
+                    <span class="channel-label">LinkedIn Profile</span>
+                    <a href="https://www.linkedin.com/in/muhamad-farid-akbar-maulana-8137a83b3" target="_blank" rel="noopener noreferrer" class="channel-value channel-link">Muhamad Farid Akbar Maulana</a>
+                    <span class="channel-desc">Tautan jejaring profesional untuk rekrutmen dan kolaborasi kerja.</span>
+                  </div>
+                </div>
+
+                <!-- Channel 3: GitHub -->
+                <div class="channel-item">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </div>
+                  <div class="channel-content">
+                    <span class="channel-label">GitHub Repository</span>
+                    <a href="https://github.com/frdakbar" target="_blank" rel="noopener noreferrer" class="channel-value channel-link">github.com/frdakbar</a>
+                    <span class="channel-desc">Akses ke repositori proyek, kode sumber, dan aktivitas pengembangan.</span>
+                  </div>
+                </div>
+
+                <!-- Location & Affiliation Info -->
+                <div class="channel-item">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="channel-content">
+                    <span class="channel-label">Domisili &amp; Institusi</span>
+                    <span class="channel-text">Cirebon, Jawa Barat • STMIK IKMI Cirebon</span>
+                    <span class="channel-desc">Tersedia untuk kesempatan kerja jarak jauh (remote) maupun lokal.</span>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+          </div>
+
+          <!-- Column 2: Message Form (FormSubmit Integration) -->
+          <div class="contact-form-panel">
+            <article class="contact-card form-card-elevated">
+              <div class="contact-card-header">
+                <span class="form-badge">
+                  <span class="availability-dot"></span>
+                  Formulir Kontak Langsung
+                </span>
+                <h3 class="contact-card-title">Kirim Pesan</h3>
+                <p class="contact-card-intro">
+                  Sampaikan pesan singkat, pertanyaan, atau tawaran kolaborasi proyek langsung ke email Farid.
+                </p>
+              </div>
+
+              <form id="contact-form" class="contact-form" action="https://formsubmit.co/farid1230akbar@gmail.com" method="POST" novalidate>
+                <!-- FormSubmit Configuration Fields -->
+                <input type="hidden" name="_subject" value="Pesan baru dari portfolio Farid">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <!-- Honeypot Anti-Spam (Bot Trap) -->
+                <input type="text" name="_honey" id="contact-honey" style="display:none;" tabindex="-1" autocomplete="off">
+
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Nama Lengkap <span class="required-mark">*</span></label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="Masukkan nama Anda..." required autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Alamat Email <span class="required-mark">*</span></label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="nama@email.com" required autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Pesan / Topik Diskusi <span class="required-mark">*</span></label>
+                  <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Tuliskan pesan atau topik kolaborasi yang ingin dibahas..." required></textarea>
+                </div>
+
+                <!-- Form Notice Banner -->
+                <div class="form-notice-banner" id="form-notice-banner" role="status">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  <span>Pesan yang dikirimkan akan diteruskan ke farid1230akbar@gmail.com melalui layanan FormSubmit.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit" id="contact-submit-btn">
+                  <span id="btn-submit-text">Kirim Pesan</span>
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer" id="footer">
+    <div class="container footer-container">
+      
+      <!-- Top Content Row: 3 Columns on Desktop -->
+      <div class="footer-top">
+        
+        <!-- Column 1: Brand & Tagline -->
+        <div class="footer-col footer-col-brand">
+          <a href="#home" class="footer-brand" aria-label="Farid Portfolio Home">
+            farid<span class="brand-dot">.</span>
+          </a>
+          <p class="footer-tagline">
+            Membangun, belajar, dan berkreasi melalui pengembangan aplikasi web, analisis data, serta eksplorasi visual.
+          </p>
+        </div>
+
+        <!-- Column 2: Navigasi Quick Links -->
+        <div class="footer-col footer-col-nav">
+          <h4 class="footer-heading">Navigasi</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#skills" class="footer-link">Skills</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+            <li><a href="#experience" class="footer-link">Experience</a></li>
+            <li><a href="#interests" class="footer-link">Interests</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Kanal Komunikasi (Terhubung) -->
+        <div class="footer-col footer-col-channels">
+          <h4 class="footer-heading">Kanal Komunikasi</h4>
+          <ul class="footer-channel-list">
+            <li class="footer-channel-item">
+              <a href="mailto:farid1230akbar@gmail.com" class="footer-channel-link">
+                <svg class="channel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span class="channel-text">farid1230akbar@gmail.com</span>
+              </a>
+            </li>
+            <li class="footer-channel-item">
+              <a href="https://www.linkedin.com/in/muhamad-farid-akbar-maulana-8137a83b3" target="_blank" rel="noopener noreferrer" class="footer-channel-link">
+                <svg class="channel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span class="channel-text">LinkedIn Profile</span>
+              </a>
+            </li>
+            <li class="footer-channel-item">
+              <a href="https://github.com/frdakbar" target="_blank" rel="noopener noreferrer" class="footer-channel-link">
+                <svg class="channel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span class="channel-text">GitHub Repository</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Divider & Copyright Row -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="copyright-year">2026</span> Muhamad Farid Akbar Maulana. All rights reserved.
+        </p>
+        <a href="#home" class="back-to-top" aria-label="Kembali ke atas halaman">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
