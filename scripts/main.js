@@ -228,6 +228,33 @@ document.addEventListener('DOMContentLoaded', () => {
   if (copyrightYearEl) {
     copyrightYearEl.textContent = new Date().getFullYear();
   }
+
+  // 5. Scroll Reveal Animations (IntersectionObserver)
+  const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+
+  if (revealElements.length > 0) {
+    if (!('IntersectionObserver' in window)) {
+      // Fallback: Reveal everything immediately if IntersectionObserver is not supported
+      revealElements.forEach((el) => el.classList.add('is-revealed'));
+    } else {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        root: null,
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      revealElements.forEach((el) => {
+        revealObserver.observe(el);
+      });
+    }
+  }
 });
 
 
